@@ -1,3 +1,3 @@
-USE account;
+CREATE DATABASE IF NOT EXISTS `account` DEFAULT CHARACTER SET `utf8mb4` DEFAULT COLLATE `utf8mb4_unicode_520_ci`;
 
-alter schema account collate `utf8mb4_unicode_520_ci`;
+USE account;
