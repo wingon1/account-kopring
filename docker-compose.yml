@@ -27,17 +27,17 @@ services:
     expose:
       - "6379"
 
-  app:
-    build:
-      context: ./
-      args:
-        PROFILE: local
-    env_file:
-      - .env
-    ports:
-      - "28000:8000" # for scheduler dashboard
-      - "28080:8080"
-      - "25005:35005" # for debugging
+#  app:
+#   build:
+#      context: ./
+#      args:
+#        PROFILE: local
+#    env_file:
+#      - .env
+#    ports:
+#      - "28000:8000" # for scheduler dashboard
+#      - "28080:8080"
+#      - "25005:35005" # for debugging
 
 volumes:
   db-vol:
